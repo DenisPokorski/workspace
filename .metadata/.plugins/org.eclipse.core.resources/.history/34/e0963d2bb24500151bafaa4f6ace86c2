@@ -1,0 +1,15 @@
+
+public class EinfachDotComSpiel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EinfachesDotComSpiel dot = new EinfachesDotComSpiel();
+		int[	] orte = {2,3,4};
+		dot.setZellorte(orte);
+		String tipp ="2";
+		String ergebnis = dot.prüfDich(tipp);
+
+	}
+
+}

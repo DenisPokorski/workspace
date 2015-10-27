@@ -1,0 +1,40 @@
+
+public class EinfachesDotCom {
+
+	int[] zellorte;
+	int anzahlTreffer;
+	
+	public void setZellorte(int[] orte)	{
+		zellorte=orte;
+		
+	}
+	
+	
+	public String prüfDich(String stringTipp) {
+		
+		int tipp = Integer.parseInt(stringTipp); // string in int umwandeln!!!
+		
+		String ergebnis = "Vorbei";
+		
+		for (int zelle : zellorte)	{
+			
+			if (tipp == zelle)	{
+				ergebnis = "Treffer";
+				anzahlTreffer++;
+				break;
+
+			}
+		}
+		
+		if (anzahlTreffer == zellorte.length)	{
+			ergebnis = "Versenkt";
+		}
+		
+		System.out.println(ergebnis);
+		
+		
+		return ergebnis;
+	}
+	
+	
+}
