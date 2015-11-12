@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xopwUIYIEeWLQowNF-DpwQ" name="model">
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_APzfkIYMEeWLQowNF-DpwQ" name="Vektor">
+    <specification xmi:type="uml:LiteralString" xmi:id="_AP0GoIYMEeWLQowNF-DpwQ" name="constraintSpec"/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FB-VcIYJEeWLQowNF-DpwQ" name="ServiceDefTarget"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YZzFwIYJEeWLQowNF-DpwQ" name="RemoteService"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8T-OEIYJEeWLQowNF-DpwQ" name="ReportServiceImpl">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_d88ocIYNEeWIJPnTaEa67w" name="nutzerMapper" visibility="private" type="_pCI0MIYNEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zKEGcIYNEeWIJPnTaEa67w" name="nachrichtMapper" visibility="private" type="_3HRi4IYNEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LCMZMIYOEeWIJPnTaEa67w" name="aboMapper" visibility="private" type="_IceUIIYOEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S86NAIYOEeWIJPnTaEa67w" name="hashtagMapper" visibility="private" type="_IceUIIYOEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sx-tkIYOEeWIJPnTaEa67w" name="loginInfo" visibility="private" type="_IceUIIYOEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KuuOIIYPEeWIJPnTaEa67w" name="int">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jT_TsIYPEeWIJPnTaEa67w" name="void" direction="return">
+        <type xmi:type="uml:DataType" href="../test/model.uml#_rRZ7kIOxEeW67uS0Q8AtKg"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-dPnsIYJEeWLQowNF-DpwQ" name="ReportServiceAsync">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HJDhQIYKEeWLQowNF-DpwQ" name="getAboVonNutzer">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_fHn9wIYLEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_h2k3UIYLEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_h2msgIYLEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ki2SIIYLEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N7CggIYMEeWLQowNF-DpwQ" name="getAboVonHashtag">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N7CggYYMEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N7CggoYMEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_N7Cgg4YMEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N7CghIYMEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fb60kIYLEeWLQowNF-DpwQ" name="Nutzer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8c1HwIYMEeWIJPnTaEa67w" name="RemoteServiceServlet"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pCI0MIYNEeWIJPnTaEa67w" name="NutzerMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3HRi4IYNEeWIJPnTaEa67w" name="NachrichtMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DXMcYIYOEeWIJPnTaEa67w" name="Class1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IceUIIYOEeWIJPnTaEa67w" name="AboMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U8XjUIYOEeWIJPnTaEa67w" name="HashtagMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vub3oIYOEeWIJPnTaEa67w" name="LoginInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_UlAWwIYPEeWIJPnTaEa67w" name="void"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2T-y0IYPEeWIJPnTaEa67w" name="ReservationServiceProxy"/>
+</uml:Model>

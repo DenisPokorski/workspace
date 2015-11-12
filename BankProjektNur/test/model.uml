@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_otyPoIOuEeW67uS0Q8AtKg" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_1rhRYIOuEeW67uS0Q8AtKg">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_zPNxkIOvEeW67uS0Q8AtKg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_HiHNkIOxEeW67uS0Q8AtKg" name="timestamp"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_rRZ7kIOxEeW67uS0Q8AtKg" name="void"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sw474IOyEeW67uS0Q8AtKg" name="ReportObject" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_y06T0IOyEeW67uS0Q8AtKg" name="id" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NNMZsIO0EeW67uS0Q8AtKg" name="erstellungsDatum" visibility="private" type="_HiHNkIOxEeW67uS0Q8AtKg" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WCAuMIPIEeW67uS0Q8AtKg" name="titel" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bY5TUIPIEeW67uS0Q8AtKg" name="impressum" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tvkKoIOyEeW67uS0Q8AtKg" name="getId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_vyfrsIOyEeW67uS0Q8AtKg" name="id" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1Sd7YIOyEeW67uS0Q8AtKg" name="setId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QsXEsIOzEeW67uS0Q8AtKg" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_UBRyEIOzEeW67uS0Q8AtKg" type="_rRZ7kIOxEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1mse8IOyEeW67uS0Q8AtKg" name="getErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hy3SoIOzEeW67uS0Q8AtKg" type="_HiHNkIOxEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3FW1UIOyEeW67uS0Q8AtKg" name="setErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YW7HMIO0EeW67uS0Q8AtKg" name="erstellungsDatum" type="_HiHNkIOxEeW67uS0Q8AtKg" isUnique="false"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g-_JMIO0EeW67uS0Q8AtKg" type="_rRZ7kIOxEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3bkV4IOyEeW67uS0Q8AtKg" name="getTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_x5WYkIO0EeW67uS0Q8AtKg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3x7ncIOyEeW67uS0Q8AtKg" name="setTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hQ82YIPJEeW67uS0Q8AtKg" name="titel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lwXA8IPJEeW67uS0Q8AtKg" type="_rRZ7kIOxEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3Bmr0IO0EeW67uS0Q8AtKg" name="getImpressum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_c1LZMIPKEeW67uS0Q8AtKg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_izFiEIPKEeW67uS0Q8AtKg" name="setImpressum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nq0tEIPKEeW67uS0Q8AtKg" name="impressum">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_p4uIAIPKEeW67uS0Q8AtKg" type="_rRZ7kIOxEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_19AwYIO2EeW67uS0Q8AtKg" name="Object"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b44qsIO3EeW67uS0Q8AtKg" name="BusinessObject"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZVVAcIPFEeW67uS0Q8AtKg" name="ReportGeneratorNachrichten">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tl5kYIPKEeW67uS0Q8AtKg" name="nutzer" type="_xj4c4IPKEeW67uS0Q8AtKg" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_t9zHAIPKEeW67uS0Q8AtKg" name="startZeit" type="_z-wj4IPKEeW67uS0Q8AtKg" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GJvtoIPLEeW67uS0Q8AtKg" name="endZeit" type="_z-wj4IPKEeW67uS0Q8AtKg" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_L1RtEIPLEeW67uS0Q8AtKg" name="getNutzer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aoH2UIPLEeW67uS0Q8AtKg" type="_xj4c4IPKEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_k1d0EIPLEeW67uS0Q8AtKg" name="setNutzer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_wNOWgIPLEeW67uS0Q8AtKg" name="nutzer" type="_xj4c4IPKEeW67uS0Q8AtKg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zSyZQIPLEeW67uS0Q8AtKg" type="_rRZ7kIOxEeW67uS0Q8AtKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eRpwgIPFEeW67uS0Q8AtKg" name="ReportGeneratorNutzerAbonnements"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hHANAIPFEeW67uS0Q8AtKg" name="Class3"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i_AQcIPFEeW67uS0Q8AtKg" name="Class4"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jvJT8IPFEeW67uS0Q8AtKg" name="Class5"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_u-UiIIPFEeW67uS0Q8AtKg" name="Class6"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_w2GjIIPFEeW67uS0Q8AtKg" name="Class7"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_9SGpcIPIEeW67uS0Q8AtKg" name="Serializable"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_xj4c4IPKEeW67uS0Q8AtKg" name="Nutzer"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_z-wj4IPKEeW67uS0Q8AtKg" name="Date"/>
+</uml:Model>

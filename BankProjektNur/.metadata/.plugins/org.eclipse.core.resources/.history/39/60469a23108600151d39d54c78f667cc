@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xopwUIYIEeWLQowNF-DpwQ" name="model">
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_APzfkIYMEeWLQowNF-DpwQ" name="Vektor">
+    <specification xmi:type="uml:LiteralString" xmi:id="_AP0GoIYMEeWLQowNF-DpwQ" name="constraintSpec"/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FB-VcIYJEeWLQowNF-DpwQ" name="ServiceDefTarget"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YZzFwIYJEeWLQowNF-DpwQ" name="RemoteService"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8T-OEIYJEeWLQowNF-DpwQ" name="Class1"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-dPnsIYJEeWLQowNF-DpwQ" name="ReportServiceAsync">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HJDhQIYKEeWLQowNF-DpwQ" name="getAboVonNutzer">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_fHn9wIYLEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_h2k3UIYLEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_h2msgIYLEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ki2SIIYLEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N7CggIYMEeWLQowNF-DpwQ" name="getAboVonHashtag">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N7CggYYMEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N7CggoYMEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_N7Cgg4YMEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N7CghIYMEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fb60kIYLEeWLQowNF-DpwQ" name="Nutzer"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kKx5IIYMEeWLQowNF-DpwQ" name="CopyOf_ReportServiceAsync_1">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kKx5IYYMEeWLQowNF-DpwQ" name="getAboVonNutzer">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_kKx5IoYMEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_kKx5I4YMEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_kKx5JIYMEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_kKx5JYYMEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kKx5JoYMEeWLQowNF-DpwQ" name="getAboVonHashtag">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_kKx5J4YMEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_kKx5KIYMEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_kKx5KYYMEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_kKx5KoYMEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>

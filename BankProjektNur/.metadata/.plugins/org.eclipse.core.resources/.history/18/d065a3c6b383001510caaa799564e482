@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_otyPoIOuEeW67uS0Q8AtKg" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_1rhRYIOuEeW67uS0Q8AtKg">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_zPNxkIOvEeW67uS0Q8AtKg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HTAsgIOvEeW67uS0Q8AtKg" name="ReportBusinessObject" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_agHakIOvEeW67uS0Q8AtKg" name="id" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oLPGwIOvEeW67uS0Q8AtKg" name="creationDate" visibility="private" type="_HiHNkIOxEeW67uS0Q8AtKg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QzmnEIOxEeW67uS0Q8AtKg" name="getId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cPCvoIOxEeW67uS0Q8AtKg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cmM18IOyEeW67uS0Q8AtKg" name="jj">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_eziQMIOyEeW67uS0Q8AtKg" name="erwt"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_HiHNkIOxEeW67uS0Q8AtKg" name="timestamp"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_rRZ7kIOxEeW67uS0Q8AtKg" name="void"/>
+</uml:Model>

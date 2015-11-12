@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/test/model.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/test/model.uml#_z-wj4IPKEeW67uS0Q8AtKg"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+				<item value="platform:/resource/test/model.uml#_xj4c4IPKEeW67uS0Q8AtKg"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="platform:/resource/test/model.uml#_HiHNkIOxEeW67uS0Q8AtKg"/>
+				<item value="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Report%20RPC/model.uml#_Fb60kIYLEeWLQowNF-DpwQ"/>
+				<item value="platform:/resource/test/model.uml#_rRZ7kIOxEeW67uS0Q8AtKg"/>
+				<item value="platform:/resource/test/model.uml#_xj4c4IPKEeW67uS0Q8AtKg"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+				<item value="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+				<item value="platform:/resource/test/model.uml#_19AwYIO2EeW67uS0Q8AtKg"/>
+				<item value="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+				<item value="platform:/resource/test/model.uml#_HiHNkIOxEeW67uS0Q8AtKg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Report%20RPC/model.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Report%20RPC/model.uml#_zkviMIYLEeWLQowNF-DpwQ"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Report%20RPC/model.uml:uml:Constraint:bodyCondition">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Report%20RPC/model.uml#_h2k3UIYLEeWLQowNF-DpwQ"/>
+			</list>
+		</section>
+	</section>
+</section>
