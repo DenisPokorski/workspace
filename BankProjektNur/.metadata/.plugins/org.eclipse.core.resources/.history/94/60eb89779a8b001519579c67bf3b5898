@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xopwUIYIEeWLQowNF-DpwQ" name="model">
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_APzfkIYMEeWLQowNF-DpwQ" name="Vektor">
+    <specification xmi:type="uml:LiteralString" xmi:id="_AP0GoIYMEeWLQowNF-DpwQ" name="constraintSpec"/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FB-VcIYJEeWLQowNF-DpwQ" name="ServiceDefTarget"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YZzFwIYJEeWLQowNF-DpwQ" name="RemoteService"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8T-OEIYJEeWLQowNF-DpwQ" name="ReportServiceImpl">
+    <generalization xmi:type="uml:Generalization" xmi:id="_cstc0IcDEeWIJPnTaEa67w" general="_8c1HwIYMEeWIJPnTaEa67w"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_ebM-8IcDEeWIJPnTaEa67w" general="_K0U7cIcCEeWIJPnTaEa67w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_d88ocIYNEeWIJPnTaEa67w" name="nutzerMapper" visibility="private" type="_pCI0MIYNEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zKEGcIYNEeWIJPnTaEa67w" name="nachrichtMapper" visibility="private" type="_3HRi4IYNEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LCMZMIYOEeWIJPnTaEa67w" name="aboMapper" visibility="private" type="_IceUIIYOEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S86NAIYOEeWIJPnTaEa67w" name="hashtagMapper" visibility="private" type="_IceUIIYOEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sx-tkIYOEeWIJPnTaEa67w" name="loginInfo" visibility="private" type="_IceUIIYOEeWIJPnTaEa67w" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KuuOIIYPEeWIJPnTaEa67w" name="int">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jT_TsIYPEeWIJPnTaEa67w" name="void" direction="return">
+        <type xmi:type="uml:DataType" href="../test/model.uml#_rRZ7kIOxEeW67uS0Q8AtKg"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qFwo8IcAEeWIJPnTaEa67w" name="getNachrichtVonNutzerUndZeit" concurrency="guarded">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xTnWwIcAEeWIJPnTaEa67w" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_25A5AIcAEeWIJPnTaEa67w" name="startDate" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5nxlUIcAEeWIJPnTaEa67w" name="endDate" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_OkeBsIcBEeWIJPnTaEa67w" name="rückgabewert" type="_C6H6cIcBEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Twid8IcBEeWIJPnTaEa67w" name="getAbonnementsVonNutzer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Zpt30IcBEeWIJPnTaEa67w" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jnXMsIcBEeWIJPnTaEa67w" name="rückgabe" type="_bsp_8IcBEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kz-w0IcBEeWIJPnTaEa67w" name="getAbonnementsVonHashtag">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_tBOfEIcBEeWIJPnTaEa67w" name="hashtag" type="_pPzb4IcBEeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0rXgQIcBEeWIJPnTaEa67w" name="rückgabe" type="_uyBHQIcBEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-dPnsIYJEeWLQowNF-DpwQ" name="ReportServiceAsync">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HJDhQIYKEeWLQowNF-DpwQ" name="getAboVonNutzer">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_fHn9wIYLEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_h2k3UIYLEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_h2msgIYLEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ki2SIIYLEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N7CggIYMEeWLQowNF-DpwQ" name="getAboVonHashtag">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N7CggYYMEeWLQowNF-DpwQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_N7CggoYMEeWLQowNF-DpwQ" name="Vektor">
+        <specification xmi:type="uml:LiteralString" xmi:id="_N7Cgg4YMEeWLQowNF-DpwQ" name="constraintSpec"/>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_9oj3AIb8EeWIJPnTaEa67w" name="Timestamp"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N7CghIYMEeWLQowNF-DpwQ" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oFFSAIb9EeWIJPnTaEa67w" name="getNachrichtVonNutzerUndZeit" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_duYHcIb-EeWIJPnTaEa67w" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nPaY0Ib-EeWIJPnTaEa67w" name="startDate" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qxzhgIb-EeWIJPnTaEa67w" name="endDate" type="_or2joIlZEeWoIa9Vz7QbrA"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_V9ghQIcAEeWIJPnTaEa67w" direction="return">
+        <type xmi:type="uml:DataType" href="../test/model.uml#_rRZ7kIOxEeW67uS0Q8AtKg"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fb60kIYLEeWLQowNF-DpwQ" name="Nutzer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8c1HwIYMEeWIJPnTaEa67w" name="RemoteServiceServlet"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pCI0MIYNEeWIJPnTaEa67w" name="NutzerMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3HRi4IYNEeWIJPnTaEa67w" name="NachrichtMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DXMcYIYOEeWIJPnTaEa67w" name="Class1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IceUIIYOEeWIJPnTaEa67w" name="AboMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U8XjUIYOEeWIJPnTaEa67w" name="HashtagMapper"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vub3oIYOEeWIJPnTaEa67w" name="LoginInfo"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_UlAWwIYPEeWIJPnTaEa67w" name="void"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2T-y0IYPEeWIJPnTaEa67w" name="ReservationServiceProxy">
+    <generalization xmi:type="uml:Generalization" xmi:id="_RLdAIIcDEeWIJPnTaEa67w" general="_-dPnsIYJEeWLQowNF-DpwQ"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_Wud8wIcDEeWIJPnTaEa67w" general="_FB-VcIYJEeWLQowNF-DpwQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Lu3mMIcEEeWIJPnTaEa67w" name="reportservice" type="_K0U7cIcCEeWIJPnTaEa67w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lu6CcIcEEeWIJPnTaEa67w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lu6CcYcEEeWIJPnTaEa67w" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pua1sIkeEeWIJPnTaEa67w" name="reportService" type="_K0U7cIcCEeWIJPnTaEa67w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pua1sYkeEeWIJPnTaEa67w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pua1sokeEeWIJPnTaEa67w" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_dBnwwIuAEeW76K-wqMp3gQ" client="_2T-y0IYPEeWIJPnTaEa67w" supplier="_K0U7cIcCEeWIJPnTaEa67w" contract="_K0U7cIcCEeWIJPnTaEa67w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cQaKEIb9EeWIJPnTaEa67w" name="Timestamp"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kl7qkIb9EeWIJPnTaEa67w" name="Class2"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_upm5gIb-EeWIJPnTaEa67w" name="AsyncCallback">
+    <ownedAttribute xmi:type="uml:ExtensionEnd" xmi:id="_4lyOwIb-EeWIJPnTaEa67w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_09Ud0Ib_EeWIJPnTaEa67w" name="AsyncCallback&lt;Vector&lt;Nachricht>> callback"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_C6H6cIcBEeWIJPnTaEa67w" name="Vector&lt;Nachricht>"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsp_8IcBEeWIJPnTaEa67w" name="Vector&lt;NutzerAbonnements>"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pPzb4IcBEeWIJPnTaEa67w" name="Hashtag"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_uyBHQIcBEeWIJPnTaEa67w" name="Vector&lt;HashtagAbonnements>"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_K0U7cIcCEeWIJPnTaEa67w" name="ReportService">
+    <generalization xmi:type="uml:Generalization" xmi:id="_bT2McIcDEeWIJPnTaEa67w" general="_YZzFwIYJEeWLQowNF-DpwQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_O3IpkIcCEeWIJPnTaEa67w" name="int">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_SHYSUIcCEeWIJPnTaEa67w" name="void" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_U-QY0IcCEeWIJPnTaEa67w" name="getNachrichtVonNutzerUndZeit">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZKdTgIcCEeWIJPnTaEa67w" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_acyeEIcCEeWIJPnTaEa67w" name="startDate" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_g0aHcIcCEeWIJPnTaEa67w" name="endDate" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lZsQgIcCEeWIJPnTaEa67w" type="_C6H6cIcBEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_pEjYsIcCEeWIJPnTaEa67w" name="getAbonnementsVonNutzer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rwgBkIcCEeWIJPnTaEa67w" name="nutzer" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xyLQIIcCEeWIJPnTaEa67w" name="rück" type="_t1NrUIcCEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_y_APoIcCEeWIJPnTaEa67w" name="getAbonnementsVonHashtag">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3Wf0UIcCEeWIJPnTaEa67w" name="hashtag" type="_pPzb4IcBEeWIJPnTaEa67w"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6zYK4IcCEeWIJPnTaEa67w" name="rück" type="_uyBHQIcBEeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_t1NrUIcCEeWIJPnTaEa67w" name="Vector&lt;NutzerAbonnements>"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_or2joIlZEeWoIa9Vz7QbrA" name="Timestamp,   callback: AsyncCallback&lt;Vector&lt;Nachricht>>"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kllMQIuSEeW76K-wqMp3gQ" name="HTMLReportWriter">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zZ8YcIuSEeW76K-wqMp3gQ" name="report1" visibility="private" type="_5WTpMIuSEeW76K-wqMp3gQ" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__XHVEIuSEeW76K-wqMp3gQ" name="report2_1" visibility="private" type="_5WTpMIuSEeW76K-wqMp3gQ" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CLjyoIuTEeW76K-wqMp3gQ" name="report2_2" visibility="private" type="_5WTpMIuSEeW76K-wqMp3gQ" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GtvkYIuTEeW76K-wqMp3gQ" name="formattingReportEins">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WTdVAIuTEeW76K-wqMp3gQ" type="_QfYdkIuTEeW76K-wqMp3gQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XnRGQIuTEeW76K-wqMp3gQ" name="formattingReportZweiEins">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_izYZYIuTEeW76K-wqMp3gQ" name="report2_1" type="_b4YWIIuTEeW76K-wqMp3gQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kZgCoIuTEeW76K-wqMp3gQ" name="formattingReportZweiiZwei">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qJ2QoIuTEeW76K-wqMp3gQ" name="report2_2" type="_ezA7QIuTEeW76K-wqMp3gQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_5WTpMIuSEeW76K-wqMp3gQ" name="StringBuilder"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_QfYdkIuTEeW76K-wqMp3gQ" name="report1"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b4YWIIuTEeW76K-wqMp3gQ" name="report2_1"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_ezA7QIuTEeW76K-wqMp3gQ" name="report2_2"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-EOUYIuTEeW76K-wqMp3gQ" name="Serializable"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DlwqUIuUEeW76K-wqMp3gQ" name="ReportGenerator" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DlwqUYuUEeW76K-wqMp3gQ" name="impressium" visibility="protected" type="_R1pQcIuUEeW76K-wqMp3gQ" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DlwqUouUEeW76K-wqMp3gQ" name="titel" visibility="protected" type="_R1pQcIuUEeW76K-wqMp3gQ" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DlwqU4uUEeW76K-wqMp3gQ" name="erstellungsDatum" visibility="protected" type="_cQaKEIb9EeWIJPnTaEa67w" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gRUP0IuUEeW76K-wqMp3gQ" name="reportAutor" visibility="protected" type="_Fb60kIYLEeWLQowNF-DpwQ" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DlwqVIuUEeW76K-wqMp3gQ" name="getTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DlwqVYuUEeW76K-wqMp3gQ" type="_R1pQcIuUEeW76K-wqMp3gQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DlwqVouUEeW76K-wqMp3gQ" name="getErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DlwqV4uUEeW76K-wqMp3gQ" name="timestamp" type="_cQaKEIb9EeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DlwqWIuUEeW76K-wqMp3gQ" name="getReportAutor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DlwqWYuUEeW76K-wqMp3gQ" name="report2_2" type="_Fb60kIYLEeWLQowNF-DpwQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ztCE0IuYEeWUKocfLoWGXQ" name="setTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ztCE0YuYEeWUKocfLoWGXQ" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5zj-MIuYEeWUKocfLoWGXQ" name="titel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ztEhEIuYEeWUKocfLoWGXQ" name="setReportAutor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ztEhEYuYEeWUKocfLoWGXQ" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLclUIuZEeWUKocfLoWGXQ" name="reportAutor" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ztFvMIuYEeWUKocfLoWGXQ" name="setErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ztFvMYuYEeWUKocfLoWGXQ" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BpIMQIuZEeWUKocfLoWGXQ" name="erstellungsDatum" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_R1pQcIuUEeW76K-wqMp3gQ" name="String"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BRTFoIuaEeWgFdIbdS0ipw" name="ReportEinsErstellung">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BRTFoYuaEeWgFdIbdS0ipw" name="nachricht" visibility="private" type="_IKcuwIuaEeWgFdIbdS0ipw" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BRTFpYuaEeWgFdIbdS0ipw" name="getTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFpouaEeWgFdIbdS0ipw" type="_R1pQcIuUEeW76K-wqMp3gQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BRTFp4uaEeWgFdIbdS0ipw" name="getErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFqIuaEeWgFdIbdS0ipw" name="timestamp" type="_cQaKEIb9EeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BRTFqYuaEeWgFdIbdS0ipw" name="getReportAutor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFqouaEeWgFdIbdS0ipw" name="report2_2" type="_Fb60kIYLEeWLQowNF-DpwQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BRTFq4uaEeWgFdIbdS0ipw" name="setTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFrIuaEeWgFdIbdS0ipw" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFrYuaEeWgFdIbdS0ipw" name="titel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BRTFrouaEeWgFdIbdS0ipw" name="setReportAutor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFr4uaEeWgFdIbdS0ipw" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFsIuaEeWgFdIbdS0ipw" name="reportAutor" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BRTFsYuaEeWgFdIbdS0ipw" name="setErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFsouaEeWgFdIbdS0ipw" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BRTFs4uaEeWgFdIbdS0ipw" name="erstellungsDatum" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_IKcuwIuaEeWgFdIbdS0ipw" name="Nachricht"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WB3xkIuaEeWgFdIbdS0ipw" name="ReportZweiErstellung">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WB3xkYuaEeWgFdIbdS0ipw" name="nachricht" visibility="private" type="_IKcuwIuaEeWgFdIbdS0ipw" isUnique="false"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WB3xkouaEeWgFdIbdS0ipw" name="getTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xk4uaEeWgFdIbdS0ipw" type="_R1pQcIuUEeW76K-wqMp3gQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WB3xlIuaEeWgFdIbdS0ipw" name="getErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xlYuaEeWgFdIbdS0ipw" name="timestamp" type="_cQaKEIb9EeWIJPnTaEa67w" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WB3xlouaEeWgFdIbdS0ipw" name="getReportAutor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xl4uaEeWgFdIbdS0ipw" name="report2_2" type="_Fb60kIYLEeWLQowNF-DpwQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WB3xmIuaEeWgFdIbdS0ipw" name="setTitel">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xmYuaEeWgFdIbdS0ipw" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xmouaEeWgFdIbdS0ipw" name="titel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WB3xm4uaEeWgFdIbdS0ipw" name="setReportAutor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xnIuaEeWgFdIbdS0ipw" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xnYuaEeWgFdIbdS0ipw" name="reportAutor" type="_Fb60kIYLEeWLQowNF-DpwQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WB3xnouaEeWgFdIbdS0ipw" name="setErstellungsDatum">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xn4uaEeWgFdIbdS0ipw" name="v" type="_UlAWwIYPEeWIJPnTaEa67w" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WB3xoIuaEeWgFdIbdS0ipw" name="erstellungsDatum" type="_cQaKEIb9EeWIJPnTaEa67w"/>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>

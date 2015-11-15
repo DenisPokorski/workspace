@@ -15,8 +15,9 @@
 	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
 		<section name="History">
 			<list key="PreviousSelection">
-				<item value="platform:/resource/Report%20RPC/model.uml#_Fb60kIYLEeWLQowNF-DpwQ"/>
 				<item value="platform:/resource/test/model.uml#_rRZ7kIOxEeW67uS0Q8AtKg"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_evNqQIucEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_Fb60kIYLEeWLQowNF-DpwQ"/>
 				<item value="platform:/resource/test/model.uml#_xj4c4IPKEeW67uS0Q8AtKg"/>
 				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
 				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -27,10 +28,23 @@
 			</list>
 		</section>
 	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Report%20RPC/model.uml:uml:Property:redefinedProperty">
+	</section>
 	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Report%20RPC/model.uml:uml:Type:type">
 		<section name="History">
 			<list key="PreviousSelection">
-				<item value="platform:/resource/Report%20RPC/model.uml#_zkviMIYLEeWLQowNF-DpwQ"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_WcPVMIuhEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_mSre4IugEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_0wJOAIugEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_wCwZMIudEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_UlAWwIYPEeWIJPnTaEa67w"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_X_RLAIudEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_evNqQIucEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_BXwdgIubEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_Fb60kIYLEeWLQowNF-DpwQ"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_kzX3AIuaEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_iZTBQIuaEeWgFdIbdS0ipw"/>
+				<item value="platform:/resource/Report%20RPC/model.uml#_IKcuwIuaEeWgFdIbdS0ipw"/>
 			</list>
 		</section>
 	</section>
